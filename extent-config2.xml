@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<extentreports>
+    <configuration>
+    	<!-- report theme -->
+    	<!-- standard, dark -->
+    	<theme>standard</theme>
+    
+		<!-- document encoding -->
+		<!-- defaults to UTF-8 -->
+		<encoding>UTF-8</encoding>
+		
+		<!-- protocol for script and stylesheets -->
+		<!-- defaults to https -->
+		<protocol>https</protocol>
+		
+        <!-- title of the document -->
+        <documentTitle>Gartner Assessment Test Report</documentTitle>
+        
+        <!-- report name - displayed at top-nav -->
+        <reportName style="text-align:center"> 
+        	<Center>TEST AUTOMATION REPORT</Center>
+        </reportName>
+        
+        <testViewChartLocation>bottom</testViewChartLocation>
+        
+		<!-- settings to enable/disable views -->
+		<!-- professional version only -->
+		<enableCategoryView>true</enableCategoryView>
+        <enableTimeline>true</enableTimeline>
+        
+        <!-- global date format override -->
+        <!-- defaults to yyyy-MM-dd -->
+        <dateFormat>dd-MM-yyyy</dateFormat>
+        
+        <!-- global time format override -->
+        <!-- defaults to HH:mm:ss -->
+        <timeFormat>HH:mm:ss</timeFormat>
+        
+        <!-- custom javascript -->
+        <scripts> 
+        	<![CDATA[ $(document).ready(function() { 
+        	$.getScript("https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit")
+  					.done(function() {
+						console.log( "Loaded" );
+						 var gt=document.createElement("ul");
+						 gt.setAttribute("id","google_translate_element");
+						 gt.setAttribute("style","margin-left: 1%; position: static; z-index: -1;");
+						 document.getElementsByClassName("card-panel heading")[0].appendChild(gt);
+					})
+					.fail(function( jqxhr, settings, exception ) {
+						$( "ul.log" ).text( "Triggered ajaxError handler." );
+					});
+        			$(".logo-content").hide(); $(".logo-container").html("<img src='IMDBLogo.svg' height='48' width='150'>");
+        		}); 
+     		]]>
+     		<script type="text/javascript">
+			function googleTranslateElementInit() {
+ 			new google.translate.TranslateElement({pageLanguage: 'en', layout: google.translate.TranslateElement.InlineLayout.SIMPLE}, 'google_translate_element');
+}
+			</script>
+        </scripts>
+
+        <!-- custom styles -->
+        <styles>
+        
+        	<![CDATA[
+        		nav {text-align: center;
+        			 font-size: large;
+        			 font-family: serif	}
+        			 
+        		img {margin-top: 0px;
+        			 width:	auto		};	 
+        	]]>
+        	
+<!--         	<![CDATA[
+        		
+        	]]> -->
+      	
+        </styles>
+    </configuration>
+</extentreports>

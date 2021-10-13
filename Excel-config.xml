@@ -1,0 +1,47 @@
+<Excel>
+
+	<ExcelFileName>Assessment-TestData</ExcelFileName>
+	
+	<ExecutionSheetName>API_TestData</ExecutionSheetName>
+	
+	<ExecutionSheetColumns>
+		<ModuleName>TestCaseNo</ModuleName>
+		<ModuleExecute>Execute</ModuleExecute>
+		<Environment>Environment</Environment>
+	</ExecutionSheetColumns>
+	
+	<TestSheetColumns>
+		<TestCaseNo>Test Case No</TestCaseNo>
+		<TestName>Test Case Name</TestName>
+		<TestExecute>ExecuteAPI</TestExecute>
+		<TestEnvironment>Environment</TestEnvironment>
+		<TestBaseURI>Base URI</TestBaseURI>
+		<TestBasePath>Base Path</TestBasePath>
+		<TestHeaders>Headers</TestHeaders>
+		<TestHeaderValues>Header Values</TestHeaderValues>
+		<TestRequest>Request File Name</TestRequest>
+		<TestResponse>Response File Name</TestResponse>
+		<TestBody>Body</TestBody>
+		<TestMethod>Method</TestMethod>
+		<TestRequestParamNames>Request Param Names</TestRequestParamNames>
+		<TestRequestParamValues>Request Param Values</TestRequestParamValues>
+		<TestParentPath>Parent Path</TestParentPath>
+		<TestNodeNames>Node Names</TestNodeNames>
+		<TestNodeValues>Node Values</TestNodeValues>
+		<TestResponseCode>Response Code</TestResponseCode>
+		<TestGetHeader>Get Header</TestGetHeader>
+		<TestDependency>Dependency</TestDependency>
+		<TestAttachFileName>AttachFileName</TestAttachFileName>
+		<TestAttachFileType>AttachedFileFormat</TestAttachFileType>
+	</TestSheetColumns>
+	
+	<UISheetColumns>
+		<UITestCaseNo>TestCaseNo</UITestCaseNo>
+		<UITestCaseName>TestCaseName</UITestCaseName>
+		<UIExecute>ExecuteUI</UIExecute>
+		<UIEnvironment>Environment</UIEnvironment>
+		<UIModuleName>TestCaseNo</UIModuleName>
+	</UISheetColumns>
+	
+</Excel>
+	
